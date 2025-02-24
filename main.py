@@ -180,4 +180,4 @@ async def submit_survey(submission: SurveySubmission, db: Session = Depends(get_
     db.refresh(new_isma)
     
     # Return question_mn to frontend
-    return {"total_sum": question_mn}
+    return {"question_mn": question_mn}
